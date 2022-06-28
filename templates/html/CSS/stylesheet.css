@@ -1,0 +1,28 @@
+.background {
+    height: fit-content;
+    overflow-x: hidden;
+    width: fit-content;
+    background-color: rgb(50, 49, 49);
+}
+
+#Login{
+    border-radius: 10px;
+    background-color: rgb(249, 246, 241);
+    width: 700px;
+    height: 500px;
+    margin: 120px 400px;
+}
+
+#Login div{
+    margin: 70px 150px;
+}
+#Login div div h4{
+    margin-right: 20px;
+}
+
+#Login div div input{
+    margin-right: 50px;
+}
+.login{
+    padding-top: 20px;
+}
