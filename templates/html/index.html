@@ -1,5 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        .background {
+            height: fit-content;
+            overflow-x: hidden;
+            width: fit-content;
+            background-color: rgb(50, 49, 49);
+        }
+        
+        #Login{
+            border-radius: 10px;
+            background-color: rgb(249, 246, 241);
+            width: 600px;
+            height: 500px;
+            margin: 120px 430px;
+        }
+        
+        #Login div div{
+            margin: 100px 200px;
+        }
+        .text{
+            position: relative;
+            top: 80px;
+        }
+        .text h4{
+            position: relative;
+            right: 100px;
+        }
+        .text input{
+            position: relative;
+            right: 110px;
+            width: 450px;
+            height: 29px;
+        }
+        .login{
+            padding-top: 20px;
+        }
+        
+        #Login div div button{
+            position: relative;
+            border-radius:60px;
+            border:3px solid darkgoldenrod;
+            width: 65px;
+            top: 30px;
+            left: 60px;
+            transform: scale(1.2);
+            background-color:darkgoldenrod ;
+            color:whitesmoke;
+            transition: 0.5s;
+        }
+        
+        #Login div div button:hover{
+            cursor: pointer;
+            border-radius:65px;
+            border:3px solid rgb(73,72,72);
+            transform:scale(1.15);
+            transform:skewY(8px);
+            background-color: rgb(73, 72, 72);
+            color: antiquewhite;
+        }
+    </style>
   <head>
     <link rel="stylesheet" href="CSS/stylesheet.css" />
     <meta charset="UTF-8" />
@@ -8,22 +68,22 @@
     <title>Login</title>
   </head>
   <body class="background">
-    <form action="POST">
+    <form action="../../app.py" method="POST">
       <div id="Login">
         <div>
-        <div class="text">
-          <h1 class="login">Login</h1>
-        </div>
-        <div class="text">
-          <h4>Userame</h4>
-          <input type="text" name="Username" id="" />
-        </div>
-        <div class="text">
-          <h4>Password</h4>
-          <input type="text" name="Password" id="" />
+          <div class="text">
+            <h4>Username:</h4>
+            <input type="text" name="Username" id="" placeholder="Username" /></i>
+          </div>
+          <div class="text">
+            <h4>Password:</h4>
+            <input type="password" name="Password" id="" placeholder="Password" />
+          </div>
+          <div>
+            <button type="submit" formaction="post">Log In</button>
+          </div>
         </div>
       </div>
-    </div>
     </form>
   </body>
 </html>
