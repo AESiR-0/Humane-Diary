@@ -30,8 +30,8 @@
         .text input{
             position: relative;
             right: 110px;
-            width: 450px;
-            height: 29px;
+            width: 420px;
+            height: 15px;
         }
         .login{
             padding-top: 20px;
@@ -39,7 +39,7 @@
         
         #Login div div button{
             position: relative;
-            border-radius:60px;
+            border-radius:40%;
             border:3px solid darkgoldenrod;
             width: 65px;
             top: 30px;
@@ -52,7 +52,7 @@
         
         #Login div div button:hover{
             cursor: pointer;
-            border-radius:65px;
+            border-radius:45%;
             border:3px solid rgb(73,72,72);
             transform:scale(1.15);
             transform:skewY(8px);
@@ -68,7 +68,7 @@
     <title>Login</title>
   </head>
   <body class="background">
-    <form action="../../app.py" method="POST">
+    <form action="/" method="POST">
       <div id="Login">
         <div>
           <div class="text">
@@ -80,7 +80,7 @@
             <input type="password" name="Password" id="" placeholder="Password" />
           </div>
           <div>
-            <button type="submit" formaction="post">Log In</button>
+            <button type="submit"> Log In </button>
           </div>
         </div>
       </div>
