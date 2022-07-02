@@ -3,6 +3,10 @@
     overflow-x: hidden;
     width: fit-content;
     background-color: rgb(50, 49, 49);
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
 }
 
 #Login{
