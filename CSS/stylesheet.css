@@ -1,6 +1,5 @@
 .background {
     height: fit-content;
-    overflow-x: hidden;
     width: fit-content;
     background-color: rgb(50, 49, 49);
     height: 100%;
@@ -17,12 +16,11 @@
     margin: 120px 430px;
 }
 
-#Login div div{
-    margin: 100px 200px;
-}
+
 .text{
     position: relative;
     top: 80px;
+    margin-top: 100px;
 }
 .text h4{
     position: relative;
@@ -42,13 +40,19 @@
     position: relative;
     border-radius:60px;
     border:3px solid darkgoldenrod;
-    width: 65px;
-    top: 30px;
-    left: 60px;
-    transform: scale(1.2);
+    width: 75px;
+    left: 80px;
+    transform: scale(1);
+    height: 40px;
     background-color:darkgoldenrod ;
     color:whitesmoke;
     transition: 0.5s;
+}
+
+#submit{
+    position: relative;
+    bottom: 70px;
+    right: 20px;
 }
 
 #Login div div button:hover{
@@ -59,4 +63,15 @@
     transform:skewY(8px);
     background-color: rgb(73, 72, 72);
     color: antiquewhite;
+}
+
+#container {
+    position: relative;
+    right:700px;
+    bottom: 200px;
+}
+#videoElement {
+	width: 400px;
+	height: 305px;
+	background-color: #666;
 }

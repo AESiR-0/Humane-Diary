@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+  <link rel="icon" href="{{url_for('static', filename='icon.png')}}" type="image/x-icon">
+  <title>Home</title>
+</head>
+
+<body>
+  <section>
+    <div class="nav">
+      <ul class="content">
+        <li> <a href="">
+            <h3 class="title"> <img class="image" src="{{url_for('static', filename='logo.png')}}" alt=""> </h3>
+          </a></li>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('text')}}">Swich to text</a></li>
+      </ul>
+      <div class="record">
+        <form method="post" action="#">
+          <input type="text" name="seconds" placeholder="&nbsp;&nbsp;&nbsp;Seconds" id="seconds" required>
+          <button> Record </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content">
+      <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Mood</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                {% for date in dates %}
+                  <td>{{date}}</td>
+                  {%endfor%}
+              </tr>
+              <tr>
+                {% for mood in moods %}
+                  <td>{{mood}}</td>
+                {%endfor%}
+              </tr>    
+    </div>
+  </section>
+</body>
+
+</html>
