@@ -25,5 +25,6 @@ def record(i, name):
     current_time = str(current_dateTime.year)+"_"+str(current_dateTime.month)+"_"+str(current_dateTime.day)+"_"+str(current_dateTime.hour)+"_"+str(current_dateTime.minute)
     a_name=str(name)+" "+str(current_time)+".wav"
     wv.write(a_name, recording, freq, sampwidth=2)
-    emo =emotions.audio_emo(a_name)
+    emo = emotions.audio_emo(a_name)
+    return emo, current_time
 

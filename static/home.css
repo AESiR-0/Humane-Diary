@@ -66,7 +66,8 @@ a:hover{
 }
 
 .text{
-    transform: translateY(300px);
+    transform: translate(-120px, 250px);
+
 }
 
 #entry{

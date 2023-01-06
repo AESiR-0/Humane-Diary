@@ -40,16 +40,15 @@
             </tr>
             </thead>
             <tbody>
+              {% for date, mood in zip%}
               <tr>
-                {% for date in dates %}
-                  <td>{{date}}</td>
-                  {%endfor%}
-              </tr>
-              <tr>
-                {% for mood in moods %}
+                
                   <td>{{mood}}</td>
-                {%endfor%}
-              </tr>    
+                  <td>{{date}}</td>
+                
+              </tr>
+              {%endfor%}
+                
     </div>
   </section>
 </body>
