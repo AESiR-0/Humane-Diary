@@ -8,8 +8,8 @@ from recording import *
 
 
 app=Flask(__name__)
-usr=['prat', 'kunal']
-pwd=['prat1008', 'kunal123']
+usr=['prat' ]
+pwd=['prat1008']
 mydb = mysql.connector.connect(host="localhost", user="root", password='Mouse@2010', database="the_sweet_spot")
 cur= mydb.cursor()
 def validate():

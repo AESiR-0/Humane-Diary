@@ -18,6 +18,7 @@ ul {
 .content{
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 a{
@@ -34,8 +35,13 @@ a:hover{
 
 .image{
     height: 25px;
-    scale: 4.1;
+    scale: 5.1;
+    transform: translateY(2.1px);
     width: 25px;
+}
+
+.element{
+    transform: translateX(60px);
 }
 
 .content li{
